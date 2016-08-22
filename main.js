@@ -21,6 +21,13 @@ function capitalizeFirstLetter(arrayElement) {
 console.log(capPlanets);
 
 // Use the filter method to create a new array that contains planets with the letter 'e'
+var planetsOnlyE = planets.filter(onlyE);
+function onlyE(arrayElement) {
+  if(arrayElement.indexOf('e') != -1) {
+    return arrayElement;
+  }
+}
+console.log(planetsOnlyE);
 
 // Use the reduce method to create a sentence from the words in the following array
 
